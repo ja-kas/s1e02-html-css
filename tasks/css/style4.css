@@ -1,0 +1,19 @@
+.item{
+    color:white;
+    min-height: 50px;
+    float: left;
+    width: 33%;
+    height: 440px;
+}
+
+
+.first{
+    background-color: green;
+}
+.second{
+    background-color: blue;
+}
+.third{
+    background-color: red;
+
+}
