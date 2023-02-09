@@ -1,0 +1,70 @@
+<!-- simple form with BEM specification -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="css/style7.css"
+    >
+</head>
+
+<body>
+    
+<!-- 
+    block__element--modifier BEM
+
+block (main conception): contact-form
+element contact-form__input
+modifier: contact-form__input--fullwidth  
+
+-->
+
+    <form
+        class="contact-form contact-form--red"
+        action=""
+        method="post"
+    >
+        <input
+            class="contact-form__input contact-form__input--fullwidth contact-form__input--transparent"
+            type="email"
+            name="email"
+            placeholder="Type your email"
+            required
+        />
+
+        <textarea
+            class="contact-form__input--transparent"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+        ></textarea>
+
+        <br />
+
+        <button class="contact-form__submit">
+            SEND
+        </button>
+
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
