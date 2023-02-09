@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    
-<!-- 
+
+    <!-- 
     block__element--modifier BEM
 
 block (main conception): contact-form
@@ -30,11 +30,26 @@ modifier: contact-form__input--fullwidth
 
 -->
 
-    <form
+    <
         class="contact-form contact-form--red"
-        action=""
-        method="post"
+        action="https://form-data-to-html-table.examples.coderoad.pl/"
+        method="POST"
     >
+
+        <input
+            class="contact-form__input contact-form__input--transparent"
+            type="hidden"
+            name="hidden"
+            value="example@examle.com"
+        />
+
+        <input
+            class="contact-form__input contact-form__input--fullwidth contact-form__input--transparent"
+            type="text"
+            name="name"
+            placeholder="Type your name"
+            required
+        />
         <input
             class="contact-form__input contact-form__input--fullwidth contact-form__input--transparent"
             type="email"
@@ -57,6 +72,69 @@ modifier: contact-form__input--fullwidth
             SEND
         </button>
 
+        <!-- <input type="submit" value="SEND"> -->
+
+        <hr />
+
+        <input id="checkbox-1"
+        type="checkbox"
+        name="checkbox"
+        
+        />
+        <label for="checkbox-1">Got it!</label>
+
+        <hr />
+
+    <label>
+        <input type="radio"
+        name="radio"
+        value="Yes"
+        required
+        />
+        Yes
+    </label>
+    <label>
+        <input type="radio"
+        name="radio"
+        value="No"
+        required
+        />
+        No
+    </label>
+    <label>
+        <input type="radio"
+        name="radio"
+        value="Other"
+        required
+        />
+        Other
+    </label>
+
+    <hr />
+
+    <select name="select" id="">
+        <option value="option-1">Option 1</option>
+        <option value="option-2">Option 2</option>
+        <option value="option-3">Option 3</option>
+    </select>
+
+    <hr />
+
+
+
+        <input
+            class="contact-form__input contact-form__input--transparent"
+            type="number"
+            name="age"
+            placeholder="Type your age"
+        />
+
+        <input
+            class="contact-form__input contact-form__input--transparent"
+            type="password"
+            name="password"
+            placeholder="Type your password"
+        />
 
 
 
