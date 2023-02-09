@@ -44,5 +44,9 @@ padding: 20px;
 }
 
 .contact-form__input--fullwidth{
-    width:100%
+    width:100%;
+}
+
+::placeholder{
+    color: #d4ae3b;
 }
