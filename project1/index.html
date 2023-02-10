@@ -48,9 +48,6 @@
             <button class="cta-button">Buy now!</button>
         </div>
     </div>
-
-
-
     <div class="features container" id="features">
         <div class="feature">
 
@@ -77,108 +74,132 @@
                     quod consectetur tempore reprehenderit aliquam similique. Impedit perspiciatis consequuntur rerum dolores ab quas repudiandae magni fuga dolorem?</p>
         </div>
     </div> 
-
-
-
-    <div class="container" id="about">
-        <div>
-            <h2>Our Team - meet people behind the course</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sunt sint, quisquam laudantium natus soluta
-            cupiditate odit ipsa asperiores illo odio amet nobis iste repudiandae aspernatur quas illum dignissimos sit!
-            </p>
-        </div>
-        <div>
-        <img
-            src="./images/team.jpg"
-            alt="Our Team"
-            width="100%"
-            height="200px"
-        />
+    <div class="about" id="about">
+        <div class="about__container container">
+            <div class="about__text">
+                <h2 class="about__header">Our Team - meet people behind the course</h2>
+                <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sunt sint, quisquam laudantium natus soluta
+                    cupiditate odit ipsa asperiores illo odio amet nobis iste repudiandae aspernatur quas illum dignissimos sit!
+                </p>
+            </div>
+            <div class="about__image">
+               <div class="about__image-container"></div>
+            </div>
         </div>
     </div>
-    <div class="container" id="testimonials">
-        <div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos odit iure aliquid obcaecati minus,
+    <div class="testimonials container" 
+         id="testimonials">
+
+        <div class="testimonial-arrow">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </div>
+
+        <div class="testimonial">
+            
+            <p class="testimonial__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos odit iure aliquid obcaecati minus,
             natus repellat nobis dolor maiores id necessitatibus, officiis, tempora libero voluptatibus in quas autem
-            excepturi.</p>
-        <hr />
-        <img
-            src="./images/jane-doe.jpg"
-            alt="Avatar"
-            width="50"
-        />
-        <p>Jane Doe</p>
+            excepturi.
+            </p>
+            <hr class="testimonial_rule"/>
+            <img
+                class="testimonial__avatar"
+                src="./images/jane-doe.jpg"
+                alt="Avatar"
+                width="50"
+            />
+            <p class="testimonial__name">Jane Doe</p>
+        </div>
+        <div class="testimonial-arrow">
+            <i class="fa-solid fa-circle-chevron-right"></i>
         </div>
     </div>
-    <div id="contact">
-        <div>
-            <h2>Have questions?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi cum, ipsam eum perferendis omnis nam
-            molestiae
-            quo maiores dolor accusantium officia maxime magni sequi quos quaerat aperiam aspernatur odit.</p>
-        <hr />
-        </div>
-        <div>
-        <img
-            src="./images/home.png"
-            alt="address"
-            width="20"
-        />
-        Icons made by
-        <a
-            href="https://www.flaticon.com/free-icons/address"
-            title="address icons"
-        >Address icons created by fjstudio - Flaticon
-        </a>
-        <p>1717 Harrison St, San Francisco, CA 94103, USA</p>
-        </div>
-        <div>
-        <img
-            src="./images/phone-call.png"
-            alt="phone"
-            width="20"
-        />
-        Icons made by
-        <a
-            href="https://www.flaticon.com/free-icons/phone"
-            title="phone icons"
-        >Phone icons created by Gregor Cresnar - Flaticon
-        </a>
-        <p>123-123-1234</p>
-        </div>
-    
 
-    <form>
-        <div>
-            <div>
-                <input
-                    type="text"
-                    placeholder="E-mail"
-                />
+
+
+
+
+    <div class="contact" id="contact">
+        <div class="contact__container">
+
+            <div class="contact__text">
+                <h2 class="contact__header">Have questions?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi cum, ipsam eum perferendis omnis nam
+                molestiae
+                quo maiores dolor accusantium officia maxime magni sequi quos quaerat aperiam aspernatur odit.</p>
+            <hr class="contact__rule" /> 
+                    <p class="contact__address-line">
+                        <i class="contact__address-icon fa-solid fa-location-dot"></i>
+                         1717 Harrison St, San Francisco, CA 94103, USA
+                    </p>
+                    <p class="contact__address-line">  
+                        <i class="contact__address-icon fa-solid fa-phone"></i>
+                         123-123-1234
+                    </p> 
             </div>
-            <div>
-                    <input
-                        type="text"
-                        placeholder="Full name"
-                    />
-            </div>
+
+            <div class="contact__form">
+                <form 
+                    class="contact-form__input--fullwidth" 
+                    action="https://form-data-to-html-table.examples.coderoad.pl/"
+                    method="POST"
+                >
+                    <div>
+                        <div>
+                            <input
+                                class="contact-form__input--transparent contact-form__input contact-form__input--fullwidth"
+                                name="email"
+                                type="email"
+                                placeholder="E-mail"
+                                required
+                            />
+                        </div>
+                    <div>
+                            <input 
+                                class="contact-form__input--transparent contact-form__input contact-form__input--fullwidth"
+                                name="text"
+                                type="text"
+                                placeholder="Full name"
+                                
+                            />
+                </div>
 
             <div>
                     <textarea
+                        class="contact-form__input--transparent contact-form__input contact-form__input--fullwidth"
+                        name="message"
                         rows="4"
                         placeholder="Message"
+                        required
                     ></textarea>
             </div>
             <div>
-                    <button>Send</button>
+                    <button class="contact-form__submit">Send</button>
             </div>
+                </div>
+                </form>
+            </div>
+
         </div>
-    </form>
     </div>
-    <div id="footer">
-    <h3>The best online courses in the market</h3>
-    <button class="cta-button cta-button--big">Buy now!</button>
-    </div>
+
+
+
+
+        <div 
+            class="footer" 
+            id="footer">
+            
+            <h3 class="footer__header">The best online courses in the market</h3>
+            <button class="cta-button cta-button--big">Buy now!</button>
+        </div>
+
+        <div class="copyright" id="copyright">
+
+            Made by <a href="https//coderoad.pl">coderoad.pl</a> & jakas
+
+        </div>
+        
+
 
 </body>
 
