@@ -241,9 +241,14 @@ a{
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
 }
+.contact-form__submit--green{
+    background-color: #1abc9c;
+}
 
-.contact-form__submit:hover {
-    background-color: #efc10b;
+
+
+.contact-form__submit--green:hover {
+    background-color: #27ae60;
 }
 
 .contact-form__input--fullwidth{
